@@ -1,10 +1,10 @@
 {
   "files": {
-    "main.css": "/photosnap/static/css/main.3bbceb4e.css",
-    "main.js": "/photosnap/static/js/main.9fd40ab7.js",
-    "index.html": "/photosnap/index.html",
-    "main.3bbceb4e.css.map": "/photosnap/static/css/main.3bbceb4e.css.map",
-    "main.9fd40ab7.js.map": "/photosnap/static/js/main.9fd40ab7.js.map"
+    "main.css": "/Countries/static/css/main.3bbceb4e.css",
+    "main.js": "/Countries/static/js/main.9fd40ab7.js",
+    "index.html": "/Countries/index.html",
+    "main.3bbceb4e.css.map": "/Countries/static/css/main.3bbceb4e.css.map",
+    "main.9fd40ab7.js.map": "/Countries/static/js/main.9fd40ab7.js.map"
   },
   "entrypoints": [
     "static/css/main.3bbceb4e.css",
