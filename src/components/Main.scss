@@ -1,0 +1,127 @@
+@import "../assets/styles/Colors.scss";
+.main {
+  height: auto;
+  width: 100%;
+  padding: 48px 5.555556% 45px 5.555556%; /* 80px/1440px */
+  .filters {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 48px;
+    transition: background 0.5s ease;
+    .search {
+      position: absolute;
+      height: 18px;
+      width: 18px;
+      top: 18px;
+      left: 32px;
+      color: #848484;
+    }
+    .arrow_bottom{
+        position: absolute;
+        top: 20px;
+        right: 22px;
+        height: 18px;
+        width: 18px;
+    }
+    .input_filter {
+      width: 480px;
+      appearance: none;
+      outline: none;
+      border: 0;
+      padding: 18px 74px 19px 74px;
+      box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+      font-family: 'Nunito Sans';
+      font-size: 14px;
+      font-style: normal;
+      font-weight: 400;
+      border-radius: 5px;
+      line-height: 20px;
+    }
+    .input_filter::placeholder {
+      color: #848484;
+    }
+    .selector_filter{
+        appearance: none;
+        outline: none;
+        box-shadow: 0px 2px 9px 0px rgba(0, 0, 0, 0.05);
+        border-radius: 5px;
+        padding: 18px 24px;
+        width: 200px;
+        border: 0;
+        color: $black;
+        font-family: 'Nunito Sans';
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 20px;
+    }
+  }
+  .country_wrap {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 263px);
+    justify-content: center;
+    gap: 75px;
+    color: $black;
+    .element {
+      height: 336px;
+      background: $white;
+      box-shadow: 0px 0px 7px 2px rgba(0, 0, 0, 0.03);
+      border-radius: 5px;
+      cursor: pointer;
+      h5 {
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 800;
+        line-height: 26px;
+        margin-left: 24px;
+        margin-top: 24px;
+        margin-bottom: 16px;
+      }
+      p {
+        font-size: 14px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 16px;
+        margin-left: 24px;
+        margin-bottom: 8px;
+        span {
+          font-weight: 600;
+        }
+      }
+    }
+    .element.darkTheme {
+      background: $dark;
+    }
+  }
+  .filters.darkThemeBody{
+    >svg{
+        color: $white;
+    }
+    .input_filter::placeholder {
+        color: $white;
+    }
+    .selector_filter{
+        color: $white;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  .main{
+    padding: 24px 7.466667%; /* 28px/375 */
+    .filters{
+      flex-direction: column;
+      gap: 40px;
+      .arrow_bottom{
+        top: 117px;
+        left: 160px;
+    }
+      .input_filter{
+        width: 320px;
+      }
+    }
+  }
+}

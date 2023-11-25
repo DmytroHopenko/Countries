@@ -1,0 +1,53 @@
+@import "../assets/styles/Colors.scss";
+header {
+  height: 80px;
+  width: 100%;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 5.555556%; /* 80px/1440 */
+  background: $white;
+  transition: background 0.5s ease;
+  span {
+    color: $black;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: normal;
+  }
+  .switch_wrap {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+    svg {
+      height: 20px;
+      width: 20px;
+      transition: 0.5s ease;
+    }
+  }
+}
+@media screen and (max-width: 768px) {
+  header{
+    padding: 0 7.466667%; /* 28px/375 */
+    span{
+      font-size: 14px;
+font-style: normal;
+font-weight: 800;
+line-height: 20px; /* 142.857% */
+    }
+    .switch_wrap{
+      font-size: 12px;
+      svg{
+        height: 16px;
+        width: 16px;
+      }
+    }
+  }
+}
