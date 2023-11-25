@@ -2,7 +2,7 @@
   "name": "countries",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://dmytrohopenko.github.io/photosnap",
+  "homepage": "https://dmytrohopenko.github.io/Countries",
   "dependencies": {
     "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
     "@testing-library/jest-dom": "^5.17.0",
